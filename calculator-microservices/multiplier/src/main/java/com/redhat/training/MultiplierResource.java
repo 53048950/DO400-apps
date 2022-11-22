@@ -14,6 +14,7 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 public class MultiplierResource implements MultiplierService {
     final Logger log = LoggerFactory.getLogger(MultiplierResource.class);
 
@@ -32,4 +33,6 @@ public class MultiplierResource implements MultiplierService {
         log.info("Multiplying {} to {}" ,lhs, rhs);
         return solverService.solve(lhs)*solverService.solve(rhs);
     }
-}
+
+
+ }
